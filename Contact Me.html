@@ -1,0 +1,337 @@
+<html>
+
+<head>
+    <title>
+        About Me
+    </title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0%;
+        font-family: Quicksand;
+
+    }
+
+    body {
+        background-color: #F77E21;
+    }
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+    .nav {
+        height: 60px;
+        width: 100%;
+        background-color: #FAC213;
+        /* background-color: #fa9203; */
+        display: flex;
+    }
+
+
+    .nav ul a {
+        text-decoration: none;
+    }
+
+    .nav ul {
+        margin: 0px;
+        width: 60%;
+        display: none;
+    }
+
+    ul li :hover {
+        visibility: visible;
+        background-color: whitesmoke;
+        text-decoration: underline red;
+        color: black;
+        padding-right: 59px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        transition: all 0.2s ease-out;
+    }
+
+    .nav ul li {
+        display: inline-block;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 7px;
+        font-size: 20px;
+        background-color: black;
+
+    }
+
+    .fo {
+        text-align: center;
+        width: 100%;
+        height: 65%;
+        margin-top: 100px;
+
+    }
+
+    table {
+        margin-left: 308px;
+    }
+
+    tr {
+        text-align: center;
+        padding-bottom: 5px;
+
+    }
+
+    td p {
+        font-size: 30px;
+        color: black;
+
+    }
+
+    input {
+        font-size: 18px;
+        width: 500px;
+        padding: 7px;
+
+    }
+
+    textarea {
+        font-size: 18px;
+        width: 500px;
+
+    }
+
+    h1  {
+        font-size: 45px;
+        color: azure;
+        padding-bottom: 20px;
+        text-decoration-line: underline;
+cursor: pointer;
+    }
+
+    .box {
+        height: 109px;
+        margin-top: 0%;
+        border-top: 5px solid black;
+
+    }
+    button i:hover {
+color: white;
+outline: 3px solid black
+    }
+
+    button i {
+        font-size: 30px;
+        background-color: #F77E21;
+        width: 500px;
+        
+    }
+
+    .box i {
+        text-align: center;
+        font-size: 30px;
+        padding-inline: 5px;
+    }
+
+    .box p {
+        text-align: center;
+        padding: 19px;
+        margin-top: 10px;
+       
+        
+    }
+    p i{
+        color: rgb(228, 210, 210);
+    }
+
+  
+    .box a:hover .fa-github  {
+  color: black; 
+}
+.box a:hover .fa-facebook {
+  /* color: rgb(66, 103, 178);  */
+  color: blue; 
+}
+.box a:hover .fa-brands fa-linkedin {
+  color: rgb(10, 102, 194);
+}
+.box a:hover .fa-x-twitter  {
+  color: black; 
+}
+
+
+
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+
+
+    .icon i {
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        font-size: 30px;
+        padding-right: 5px;
+        transition: transform 1s;
+
+    }
+
+    .nav i.clicked {
+        transform: rotate(90deg);
+        color: antiquewhite;
+    }
+
+    
+   .icon i:hover {
+
+        font-size: 30px;
+        margin-top: 15px;
+        margin-left: 15px;
+        transform: rotate(90deg);
+        color: antiquewhite;
+    }
+
+    .icon {
+        width: 50px;
+    }
+ 
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+    @media only screen and (max-width: 455px) {
+
+.nav {
+    width: 100vw;
+    height: 7vh;
+    /* The vw unit represents a percentage of the viewport Width 
+     will take up 100% of the viewport width */
+}
+
+.nav ul li :hover {
+    padding-right: 30px;
+    padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    transition: all 0.2s ease-out;
+    background-color: whitesmoke;
+    text-decoration: underline red;
+    color: black;
+    
+
+}
+
+.nav ul li {
+    margin-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 12px;
+}
+.fo {
+    margin-top:10vh;
+    margin-bottom:10vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    height: 53vh;
+    width: 70vw;
+}
+.fo table {
+    margin-left: 10vw;
+    margin-right: 5vw;
+};
+
+
+    }
+</style>
+
+
+<body>
+    <!-- <link rel="stylesheet" href="\sourabh project\style.css"> -->
+    <link rel="stylesheet" href="\SOURABH\fontawesome-free-6.4.2-web\fontawesome-free-6.4.2-web\css\all.min.css">
+
+    <div class="nav">
+
+        <div class="icon">
+            <i class="fa-solid fa-bars" id="barsIcon" onclick="toggleBarsIcon()" ></i>
+        </div>
+        <ul id="navList">
+            <li> <a href="Home.html">Home</a></li>
+            <li> <a href="about.html">About me</a></li>
+            <li><a href="Contact Me.html"> Contact me</a></li>
+        </ul>
+
+    </div>
+    <script>
+
+        function toggleBarsIcon() {
+            var barsIcon = document.getElementById('barsIcon');
+            barsIcon.classList.toggle('clicked');
+            var navList = document.getElementById('navList');
+            navList.style.display = (navList.style.display === 'none' || navList.style.display === '') ? 'inline-block' : 'none';
+        }
+
+      
+    </script>
+    <div class="fo">
+        <form method="post">
+            <h1>
+               Contact me
+            </h1>
+            <table>
+                <tr>
+                    <td>
+                        <p> Full name</p>
+                    </td>
+                    <td>
+                        <input type="text box" name="n" placeholder=" Name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Email</p>
+                    </td>
+                    <td>
+                        <input type="email" name="email" placeholder="Email id here" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Subject</p>
+                    </td>
+                    <td>
+                        <input type="text box" name="subject" placeholder="Subject" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="margin-bottom: 130px;"> Your Message</p>
+                    </td>
+                    <td>
+                        <textarea style="border: 2px solid gray;" name="fn" rows="7" cols="20"
+                            placeholder="Question/Comment" required></textarea>
+                    </td>
+                </tr>
+            </table>
+            <!-- <i class="fa-brands fa-facebook-messenger"><input type="submit" >
+            </i> -->
+            <button type="submit" style="margin-left: 156px; margin-top: 10px;  cursor: pointer; border: 2px">
+                <i class="fa-brands fa-facebook-messenger"></i>
+            </button>
+            <!-- <button type="submit" style="margin-left: 123px; margin-top: 10px; border: 2px; cursor: pointer;">
+                <i class="fa-brands fa-facebook-messenger"></i>
+            </button> -->
+
+        </form>
+    </div>
+    <div class="box">
+        <h2 style="text-align: center; text-decoration-line: underline; cursor: pointer;">
+            Avaliable on the internet
+        </h2>
+        <p>
+            <a href="https://github.com/sourabhkale15"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.facebook.com/"></a> <i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/sourabh-vasant-kale/"></a> <i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+        </p>
+    </div>
+
+</body>
+
+</html>

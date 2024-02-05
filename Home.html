@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <title>
+        Home
+    </title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="\SOURABH\sourabh project\style.css">
+    <link rel="stylesheet" href="\SOURABH\fontawesome-free-6.4.2-web\fontawesome-free-6.4.2-web\css\all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <div class="nav">
+        <div class="icon">
+            <i class="fa-solid fa-bars" id="barsIcon" onclick="toggleBarsIcon()"></i>
+            <!-- <i class="fa-solid fa-bars" id="barsIcon" onclick="toggleBarsIcon()" onmouseover="showNavList()" onmouseout="hideNavList()" ></i> -->
+            <!--  -->
+        </div>
+        <script>
+
+            function toggleBarsIcon() {
+                var barsIcon = document.getElementById('barsIcon');
+                barsIcon.classList.toggle('clicked');
+                var navList = document.getElementById('navList');
+                navList.style.display = (navList.style.display === 'none' || navList.style.display === '') ? 'inline-block' : 'none';
+            }
+
+            //         function toggleBarsIcon() {
+            //     var barsIcon = document.getElementById('barsIcon');
+            //     barsIcon.classList.toggle('clicked');
+            //     var navList = document.getElementById('navList');
+            //     navList.style.display = (navList.style.display === 'none' || navList.style.display === '') ? 'inline-block' : 'none';
+            // }
+
+            // function showNavList() {
+            //     var navList = document.getElementById('navList');
+            //     navList.style.display = 'inline-block';
+            // }
+
+            // function hideNavList() {
+            //     var barsIcon = document.getElementById('barsIcon');
+            //     if (!barsIcon.classList.contains('clicked')) {
+            //         var navList = document.getElementById('navList');
+            //         navList.style.display = 'none';
+            //     }
+            // }
+
+
+        </script>
+
+
+
+
+        <ul id="navList">
+            <li> <a href="Home.html">Home</a></li>
+            <li> <a href="about.html">About me</a></li>
+            <li><a href="Contact Me.html"> Contact me</a></li>
+        </ul>
+
+    </div>
+
+    <div class="box1">
+        <img src="\SOURABH\sourabh project\Asta.jpg">
+        <div class="text">
+            <h1>
+                Hi I am Sourabh
+            </h1>
+            <p class="b">
+                👋 Hey there! I'm an emerging developer on a mission to turn tech dreams into reality. Fluent in the
+                language
+                of code, I bring ideas to life in the digital world. Let's team up and create some seriously cool stuff
+                together! 💻✨
+            </p>
+        </div>
+    </div>
+
+    <style>
+        @media only screen and (max-width: 455px) {
+
+            .nav {
+                width: 100vw;
+                height: 7vh;
+                /* The vw unit represents a percentage of the viewport Width 
+                 will take up 100% of the viewport width */
+            }
+
+            .nav ul li :hover {
+                padding-right: 30px;
+                padding-left: 15px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                transition: all 0.2s ease-out;
+                background-color: whitesmoke;
+                text-decoration: underline red;
+                color: black;
+                
+
+            }
+
+            .nav ul li {
+                margin-top: 10px;
+                padding-right: 15px;
+                padding-left: 15px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                font-size: 12px;
+            }
+
+
+
+            .box1 {
+                margin-left: 10vw;
+                margin-right: 10vw;
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+                width: auto;
+                height: 75vh;
+            }
+
+            .text {
+                width: 50vw;
+                height: 50vh;
+                font-size: 20px;
+            }
+
+            .box1 img {
+                display: none;
+            }
+
+
+
+
+        }
+    </style>
+
+</body>
+
+</html>

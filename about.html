@@ -1,0 +1,289 @@
+<html>
+
+<head>
+    <title>
+        About Me
+    </title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0%;
+        font-family: Quicksand;
+    }
+
+    body {
+        background-color: #F77E21;
+    }
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+    .nav {
+        height: 60px;
+        width: 100%;
+        background-color: #FAC213;
+        display: flex;
+    }
+
+    .nav ul a {
+        text-decoration: none;
+    }
+
+    ul li :hover {
+        visibility: visible;
+        background-color: whitesmoke;
+        text-decoration: underline red;
+        color: black;
+        padding-right: 59px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        transition: all 0.2s ease-out;
+    }
+
+    .nav ul li {
+        display: inline-block;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 7px;
+        font-size: 20px;
+        background-color: black;
+
+    }
+
+    .nav ul {
+        margin: 0px;
+        width: 60%;
+        display: none;
+    }
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+    .box1 {
+        background-color: #D61C4E;
+        height: 550px;
+        width: 1270px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .box1 img {
+        float: left;
+        height: 150px;
+        width: 150px;
+        border: black;
+        border-radius: 3px;
+        margin-top: 80px;
+        margin-left: 30px;
+    }
+
+    .box1 p {
+        color: white;
+        text-align: start;
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .box1 .two {
+        height: 400px;
+        width: 1270px;
+    }
+
+    .box1 tr td {
+        text-align: left;
+        list-style-type: none;
+        color: white;
+        margin-left: 190px;
+        font-size: 25px;
+        padding-bottom: 10px;
+        display: inline-block;
+    }
+
+    a button {
+        text-align: right;
+        text-decoration: none;
+        padding: 7px;
+        cursor: pointer;
+
+    }
+
+    button i {
+        font-size: 20px;
+    }
+
+    button {
+        outline: 2px solid black;
+    }
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+
+    .icon i {
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        font-size: 30px;
+        padding-right: 5px;
+        transition: transform 1s;
+
+    }
+
+    .nav i.clicked {
+        transform: rotate(90deg);
+        color: antiquewhite;
+    }
+
+    .icon i:hover {
+
+        font-size: 30px;
+        margin-top: 15px;
+        margin-left: 15px;
+        transform: rotate(90deg);
+        color: antiquewhite;
+    }
+
+    .icon {
+        width: 50px;
+    }
+
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+    @media only screen and (max-width: 455px) {
+
+.nav {
+    width: 100vw;
+    height: 7vh;
+    /* The vw unit represents a percentage of the viewport Width 
+     will take up 100% of the viewport width */
+}
+
+.nav ul li :hover {
+    padding-right: 30px;
+    padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    transition: all 0.2s ease-out;
+    background-color: whitesmoke;
+    text-decoration: underline red;
+    color: black;
+    
+
+}
+
+.nav ul li {
+    margin-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 12px;
+}
+.box1 img{
+    display: none;
+}
+.box1 {
+    margin-top:10vh;
+    margin-bottom:10vh;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    height: 73vh;
+    width: 80vw;
+}
+.two {
+    font-size: 10px;
+}
+
+    }
+</style>
+
+
+<body>
+    <!-- <link rel="stylesheet" href="\sourabh project\style.css"> -->
+    <link rel="stylesheet" href="\SOURABH\fontawesome-free-6.4.2-web\fontawesome-free-6.4.2-web\css\all.min.css">
+
+    <div class="nav">
+
+        <div class="icon">
+            <i class="fa-solid fa-bars" id="barsIcon" onclick="toggleBarsIcon()" ></i>
+        </div>
+        <script>
+
+            function toggleBarsIcon() {
+                var barsIcon = document.getElementById('barsIcon');
+                barsIcon.classList.toggle('clicked');
+                var navList = document.getElementById('navList');
+                navList.style.display = (navList.style.display === 'none' || navList.style.display === '') ? 'inline-block' : 'none';
+            }
+
+           
+        </script>
+        <ul id="navList">
+            <li> <a href="Home.html">Home</a></li>
+            <li> <a href="about.html">About me</a></li>
+            <li><a href="Contact Me.html"> Contact me</a></li>
+        </ul>
+
+    </div>
+
+    <div class="box1">
+        <img src="Passport.jpg">
+        <div class="two">
+            <p style=" margin-left: 180px; padding-top: 80px; padding-bottom: 10px;">
+                <!-- Driven by a strong academic background, I achieved an 8.30 CGPA in BCA from Bhartiya Vidya Peeth
+                Institute of Management. My educational journey, marked by a 72.60% in SSC and 72.62% in HSC,
+                showcases my dedication to excellence.
+                My career interests span across diverse domains, including network security, cybersecurity, gaming
+                development, and software development. I aspire to contribute my skills and knowledge to create
+                innovative solutions in the tech industry With a passion for technology and innovation, I've engaged
+                in projects like 'Shree Sai Krupa Dugdhaly (E-grocery store)' and 'Java Application World.
+                My ideal career involves dynamic challenges and opportunities for continuous growth, making a
+                meaningful impact in the world of technology. -->
+
+                🚀 Fueled by a robust academic background, I proudly earned an 8.30 CGPA in BCA from Bhartiya Vidya
+                Peeth Institute of Management. 🎓 My scholastic journey, highlighted by a 72.60% in SSC and 72.62% in
+                HSC, underscores my unwavering dedication to excellence.
+            </p>
+            <P style=" margin-left: 180px;  padding-bottom: 10px;">
+                My career compass points toward diverse domains—network security, cybersecurity, gaming development, and
+                software development. 💡 I'm eager to contribute my skills and knowledge, aiming to forge innovative
+                solutions in the dynamic realm of technology.
+
+                With a fervor for technology and innovation, I've actively participated in projects like 'Shree Sai
+                Krupa Dugdhaly (E-grocery store)' and 'Java Application World.' 💻
+            </P>
+            <P style=" margin-left: 180px;  padding-bottom: 10px;">
+                In pursuit of my ideal career, I seek dynamic challenges and continuous growth opportunities, aspiring
+                to make a meaningful impact in the ever-evolving world of technology. 🌐✨
+
+            </p>
+            <!-- <p style="margin-left: 180px;  padding-bottom: 10px; font-size: 20px;"> -->
+            <table>
+                <tr>
+                    <td>Education : BCA</td>
+                    <td>Email : sourabhkale9@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Nationality : indian</td>
+                    <td> Age : 22</td>
+                </tr>
+
+                <tr>
+                    <td> Working location : Mumbai/Navi Mumbai</td>
+
+                </tr>
+            </table>
+            <!-- </p> -->
+            <a href="https://drive.google.com/file/d/1r9oK3oS3F8n7WpZdoG8sVcshwPiL-RXA/view?usp=sharing">
+                <button style="height: 40px;">
+                    <i class="fa-solid fa-download">
+                    </i> Download Resume
+                </button>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
